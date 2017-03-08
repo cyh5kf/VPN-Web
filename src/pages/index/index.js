@@ -1,4 +1,3 @@
 import './index.less';
+import './index.html';
 
-var text = $("p").text();
-console.log(text);

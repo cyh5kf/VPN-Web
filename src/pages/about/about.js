@@ -1,1 +1,2 @@
-require('./about.less')
+import  './about.html';
+import  './about.less';

@@ -1,3 +1,2 @@
-require('./help.less');
-
-console.log($("p").text());
+import './help.html';
+import './help.less';
