@@ -1,0 +1,595 @@
+@import "../../components/common/common.less";
+@import "../../static/iconFont/fonticon.css";
+
+.jumbotron-vpn-pages h1, .jumbotron-vpn-pages h2, .jumbotron-vpn-pages h2.subtitle, .jumbotron-vpn-pages h3 {
+  color: #fff!important;
+}
+
+h1, .jumbotron h1 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+.jumbotron-vpn-pages h2 {
+  font-weight: 400;
+  font-size: 27px;
+  margin: 0 0 5px 0!important;
+}
+
+.apps {
+  .jumbotron--dark_blue, .jumbotron-vpn-pages {
+    color: #ffffff;
+    background: #19243a;
+    background: -moz-linear-gradient(45deg, #19243a 0%, #19243a 50%, #1e2b44 50%, #1e2b44 100%);
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%, #19243a), color-stop(50%, #19243a), color-stop(50%, #1e2b44), color-stop(100%, #1e2b44));
+    background: -webkit-linear-gradient(45deg, #19243a 0%, #19243a 50%, #1e2b44 50%, #1e2b44 100%);
+    background: -o-linear-gradient(45deg, #19243a 0%, #19243a 50%, #1e2b44 50%, #1e2b44 100%);
+    background: -ms-linear-gradient(45deg, #19243a 0%, #19243a 50%, #1e2b44 50%, #1e2b44 100%);
+    background: linear-gradient(45deg, #19243a 0%, #19243a 50%, #1e2b44 50%, #1e2b44 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#19243a', endColorstr='#1e2b44',GradientType=1 );
+  }
+
+  .breadcrumb.vpn {
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 14px;
+    padding-bottom: 6px;
+    margin-bottom: 10px;
+    position: relative;
+    list-style: none;
+    z-index: 5;
+
+    li {
+      font-size: 14px !important;
+      line-height: 1.5 !important;
+      color: rgba(255,255,255,0.4);
+      float: left;
+      padding-right: 3px;
+      list-style-type: none;
+      display: inline-block;
+
+      a {
+        color: rgba(255,255,255,0.4);
+
+        .fa-home {
+          font-size: 0.1px;
+          visibility: hidden;
+
+          &:before {
+            visibility: visible;
+            font-size: 14px;
+          }
+        }
+
+        .fa {
+          display: inline-block;
+          font: normal normal normal 14px/1 FontAwesome;
+          font-size: inherit;
+          text-rendering: auto;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+        }
+
+      }
+    }
+
+    li+li:before {
+      color: rgba(255,255,255,0.4);
+      padding: 0 5px;
+      content: "/";
+    }
+
+    li:last-child span {
+      color: rgba(255,255,255,0.6);
+    }
+  }
+
+  .breadcrumb {
+    margin-top: -10px;
+    padding: 0;
+    margin-bottom: 20px;
+    display: inline-block;
+    list-style: none;
+    min-height: 38px;
+  }
+
+  .hero-container {
+    position: relative;
+    overflow: hidden;
+
+    .hero-text {
+      width: 100%;
+      margin-bottom: 20px;
+      font-size: 18px;
+      line-height: 1.25;
+
+      .title {
+        margin: 0;
+        line-height: 1.2;
+      }
+
+      .title-sub {
+        margin-bottom: 20px;
+      }
+
+      .title-sub, .subtitle {
+        line-height: 1.25;
+        font-size: 18px;
+      }
+
+      .hero-image {
+        max-width: 240px;
+        width: 100%;
+        margin: 25px auto;
+
+        img.img-center, img.img-center-full {
+          margin: 0 auto;
+        }
+
+      }
+
+      .subtitle {
+        font-weight: normal;
+        max-width: 500px;
+        width: 100%;
+        margin: auto!important;
+      }
+
+      .software-platform-message {
+        border-top: 1px solid rgba(255,255,255,0.15);
+        padding-top: 18px;
+        margin-top: 18px;
+
+        .action {
+          margin-top: 20px;
+          margin-bottom: 30px;
+        }
+
+        .action-link {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        .btn, .xv_btn {
+          min-width: 200px;
+          margin-top: 0;
+          margin-bottom: 10px;
+        }
+
+        .xv_btn {
+          height: 57px;
+          border-radius: 4px;
+          font-size: 20px;
+          font-weight: normal;
+          padding: 16px 20px;
+          border: 1px solid transparent;
+          display: inline-block;
+          text-align: center;
+          cursor: pointer;
+        }
+
+        .xv_btn-white.xv_btn-border {
+          color: #fff;
+        }
+        .xv_btn.xv_btn-border {
+          background-color: transparent;
+        }
+        .xv_btn-white {
+          color: #43474C;
+          border-color: #fff!important;
+          background-color: #fff;
+        }
+
+        .xv_btn-white:hover, .xv_btn-white:focus, .xv_btn-white:active {
+          color: #fff!important;
+          background-color: rgba(255,255,255,0.1);
+        }
+
+      }
+    }
+
+    .action, .hero-text {
+      text-align: center;
+    }
+  }
+
+  .vpn-links {
+    background: #3B6EB6;
+    color: rgba(255,255,255,0.8);
+    padding: 30px 0;
+    text-align: center;
+
+    h3 {
+      margin: 0 0 20px 0;
+    }
+
+    a {
+      line-height: 1;
+      color: #fff!important;
+      font-size: 18px;
+      padding: 12px 0 14px;
+      display: block;
+      border-radius: 4px;
+      border: 1px solid rgba(255,255,255,0.2);
+      margin-bottom: 10px;
+      text-align: center;
+
+      .xv_btn-icon, .xv_btn-text {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1;
+      }
+
+      .platform-white-windows {
+        background-position: -60px -60px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .platform-white-android {
+        background-position: 0 0;
+        width: 30px;
+        height: 30px;
+      }
+
+      .platform-white {
+        background: url("./images/platform-white.png") no-repeat;
+        -webkit-background-size: 90px 90px;
+        -moz-background-size: 90px 90px;
+        background-size: 90px 90px;
+      }
+
+      .platform-white-iphone {
+        background-position: -60px 0;
+        width: 30px;
+        height: 30px;
+      }
+
+      .platform-white-mac {
+        background-position: 0px -60px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .platform-white-ios {
+        background-position: 0px -30px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .platform-white-ipad {
+        background-position: -30px -30px;
+        width: 30px;
+        height: 30px;
+      }
+
+      .app-name {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 16px;
+      }
+    }
+
+    a:focus, a:active, a:hover {
+      text-decoration: none;
+      border: 1px solid white;
+    }
+  }
+
+  section {
+    padding: 50px 0;
+  }
+
+  .vpn-steps {
+    border-bottom: 1px solid #eee;
+    h2 {
+      margin: 10px 0 12px;
+    }
+
+    .steps-container {
+      margin-top: 40px;
+      display: table;
+      table-layout: fixed;
+      white-space: nowrap;
+      width: 100%;
+
+      .step {
+        white-space: normal;
+        height: 100%;
+        border-radius: 15px;
+        background: #fff;
+        border: 3px solid #333333;
+        padding: 1em 2em;
+        max-width: 330px;
+        margin: auto;
+        margin-bottom: 1em;
+
+        .title {
+          margin-top: 10px;
+        }
+
+        .image {
+          max-width: 240px;
+          margin-bottom: 20px;
+
+          img {
+            background-color: #fff;
+            max-height: 160px;
+            margin: 0 auto;
+          }
+        }
+
+        p {
+          margin: 0 0 12px;
+        }
+      }
+    }
+  }
+
+  h2 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+  }
+
+  .subtitle {
+    font-weight: normal;
+  }
+
+  h2.subtitle {
+    color: #666;
+    font-size: 22px;
+    line-height: 30px;
+    margin-top: 0;
+  }
+
+  .devices {
+    text-align: center;
+    .col-xs-12 {
+      margin-bottom: 10px;
+      margin-top: 20px;
+    }
+    .col-sm-6 {
+      margin-bottom: 20px;
+      margin-top: 20px;
+    }
+
+    .benefit {
+      padding-bottom: 30px;
+      border-bottom: 1px solid #eeeeee;
+      max-width: 420px;
+      width: 100%;
+      margin: auto;
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+
+    img {
+      max-width: 230px;
+      margin: auto;
+    }
+
+    img.img-support {
+      max-height: 185px;
+    }
+
+    a:focus, a:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  .offwhite2 {
+    background-color: #f5f5f5;
+  }
+
+  section.offwhite2 h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin: 0 0 12px;
+  }
+
+  ul.list-divided.in-detail {
+    margin: 15px 0;
+    padding: 15px 0;
+    border-top: 1px solid rgba(30,30,30,0.1);
+    border-bottom: 1px solid rgba(30,30,30,0.1);
+    list-style: none;
+  }
+
+  ul.list-divided li {
+    padding: 0 10px;
+    border-right: 1px solid rgba(30,30,30,0.5);
+  }
+
+  .table-mimic li {
+    text-align: center;
+    display: inline-block;
+    padding: 0 !important;
+
+    a {
+      color: #5bc0de;
+    }
+
+    a:focus, a:hover {
+      text-decoration: underline;
+    }
+
+  }
+
+  .table-mimic li:first-child {
+    width: 30%;
+  }
+
+  ul.list-divided li:last-child {
+    border-right: 0 none;
+  }
+
+  .table-mimic li:last-child {
+    width: 38%;
+  }
+
+}
+
+@media screen and (min-width: 480px){
+  .software-platform-message .action-link {
+    margin-right: 10px;
+  }
+
+  .software-platform-message .action-link:last-child {
+    margin-right: 0;
+  }
+
+  .xv_btn-icon {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .app-name {
+    margin-left: 7px;
+    font-size: 18px!important;
+  }
+
+  .hero-text .title {
+    font-size: 32px;
+  }
+
+  .hero-text .title-sub {
+    font-size: 22px!important;
+  }
+}
+
+@media (max-width: 767px) {
+  a.btn {
+     margin: 5px 0;
+   }
+
+  .btn-get {
+    display: block;
+  }
+
+  .table-mimic li:first-child {
+    width: 100%!important;
+    border-bottom: 0 none !important;
+  }
+
+  ul.list-divided li:first-child {
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(30,30,30,0.1);
+    margin-bottom: 10px;
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .hero-image {
+    max-width: 320px!important;
+  }
+
+  .step {
+    margin-left: 1%!important;
+    margin-right: 1%!important;
+    width: 31%;
+    display: inline-block;
+    vertical-align: top;
+  }
+
+  .text {
+    padding-bottom: 30px;
+  }
+
+  .devices {
+    .col-xs-12 {
+       margin-bottom: 20px!important;
+     }
+
+    .col-sm-6 {
+      width: 50%!important;
+    }
+
+    .benefit {
+      max-width: 100%!important;
+      border-bottom: 0!important;
+      padding-bottom: 0!important;
+    }
+
+    img {
+      max-width: 335px!important;
+    }
+  }
+
+}
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .jumbotron-vpn-pages h2.subtitle {
+    font-size: 20px!important;
+  }
+}
+
+@media (max-width: 991px) {
+  h2 {
+    font-size: 25.704px;
+  }
+
+  h3 {
+    font-size: 22.848px;
+  }
+}
+
+
+
+@media (min-width: 992px) {
+  #vpn-software .hero-text, #vpn-software .hero-image {
+    width: 49%!important;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  #vpn-software .action, #vpn-software .hero-text {
+    text-align: left;
+  }
+
+  .hero-text {
+    padding-right: 20px;
+    max-width: 100%!important;
+
+    .title {
+      font-size: 38px;
+      margin-top: 25px!important;
+    }
+
+    .title-sub {
+      font-size: 27px!important;
+    }
+
+    .subtitle {
+      margin-top: 30px!important;
+    }
+  }
+
+  .hero-image {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    z-index: 1;
+    margin-top: -138px!important;
+    max-width: 100%!important;
+  }
+
+  .software-platform-message .action {
+    margin-top: 40px!important;
+  }
+
+  #vpn-software .vpn-links a {
+    padding: 10px 0;
+  }
+
+  .p-50 {
+    padding: 50px 50px 20px 50px;
+  }
+
+}

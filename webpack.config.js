@@ -15,34 +15,6 @@ var isProduction = function () {
     return isRelease;
 };
 
-var getLessLoader = function () {
-    if (isProduction()) {
-        return {
-            test: /\.less?$/,
-            loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")
-        };
-    } else {
-        return {
-            test: /\.less?$/,
-            loaders: ['style-loader', 'css-loader', 'less-loader?{"sourceMap":true}']
-        };
-    }
-};
-
-var getCssLoader = function () {
-    if (isProduction()) {
-        return {
-            test: /\.css$/,
-            loader: ExtractTextPlugin.extract("style-loader", "css-loader")
-        };
-    } else {
-        return {
-            test: /\.css$/,
-            loaders: ['style-loader', 'css-loader']
-        };
-    }
-};
-
 var plugins = [
     new webpack.ProvidePlugin({
         $: 'jquery', // 使jquery变成全局变量,不用在自己文件require('jquery')了
@@ -64,6 +36,7 @@ var plugins = [
     new ExtractTextPlugin(isProduction() ? '[name]/[name].[hash].css' : '[name]/[name].css'),
     new webpack.HotModuleReplacementPlugin()
 ];
+
 
 if (isProduction()) {
     plugins.push(
@@ -145,11 +118,11 @@ module.exports = {
         loaders: [
             {test: /\.js?$/, exclude: /node_modules/, loader: 'babel?cacheDirectory'},
             {test: /\.styl$/, loader: 'style-loader!css-loader!stylus-loader'},
-            {test: /\.scss$/, loaders: ["style", "css", "sass"]},
-            getLessLoader(), getCssLoader(),
-            {test: /\.(jpg|png|jpeg|gif)$/, loader: 'url?limit=10000&name=./static/img/[name]-[hash].[ext]'},
-            {test: /\.(woff|woff2|eot|ttf|svg)(\?.*)?/i, loader: 'file-loader?name=./static/fonts/[name]-[hash].[ext]'},
-            {test: /\.rt/, loader: "react-templates-loader"},
+            {test: /\.scss$/, loaders: ["style", "css", "ƒ"]},
+            {test: /\.less?$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader!less-loader")},
+            {test: /\.css$/, loader: ExtractTextPlugin.extract("style-loader", "css-loader")},
+            {test: /\.(jpg|png|jpeg|gif)$/, loader: 'url?limit=10000&name=/static/img/[name]-[hash].[ext]'},
+            {test: /\.(woff|woff2|eot|ttf|svg)(\?.*)?/i, loader: 'file-loader?name=/static/fonts/[name]-[hash].[ext]'},
             {
                 test: require.resolve('jquery'),  // 此loader配置项的目标是NPM中的jquery
                 loader: 'expose?$!expose?jQuery', // 先把jQuery对象声明成为全局变量`jQuery`，再通过管道进一步又声明成为全局变量`$`
@@ -164,7 +137,7 @@ module.exports = {
         extensions: ['', '.js', '.less', '.css', '.html']
     },
     debug: isProduction() ? false : true,
-    devtool: isProduction() ? null : 'eval-cheap-module-source-map',
+    devtool: isProduction() ? null : 'cheap-module-source-map',
     devServer: {
         port: 8080,
         host: 'localhost',

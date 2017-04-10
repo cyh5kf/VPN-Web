@@ -1,205 +1,7 @@
 @import "../../components/common/common.less";
-
-.container {
-  margin: 0 auto;
-  padding: 0 15px;
-}
-
-.row {
-  margin-left: -15px;
-  margin-right: -15px;
-  overflow: hidden;
-}
-
-.glyphicon {
-  position: relative;
-  top: 1px;
-  display: inline-block;
-  font-family: 'Glyphicons Halflings';
-  font-style: normal;
-  font-weight: normal;
-  line-height: 1;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.btn-get {
-  border-radius: 4px;
-  font-weight: 700;
-  padding-top: 14px;
-  padding-bottom: 14px;
-}
-
-.btn-lg {
-  padding: 10px 16px;
-  font-size: 20px;
-  line-height: 1.33;
-  border-radius: 6px;
-}
-
-.btn-danger {
-  color: #fff;
-  background-color: #C8252C;
-  border-color: #C8252C;
-}
-
-.btn.btn-get span.glyphicon.glyphicon-circle-arrow-right {
-  &:before {
-    content: "\e131";
-  }
-}
+@import "../../static/iconFont/fonticon.css";
 
 
-.header {
-  .navbar {
-    margin-bottom: 0;
-    background: #fff;
-    text-transform: uppercase;
-    font-size: 14px;
-    border-top: 6px solid #b9121b;
-    border-bottom: 1px solid transparent;
-    border-left: 0;
-    border-right: 0;
-    position: relative;
-    min-height: 50px;
-  }
-
-  .container {
-    margin: 0 auto;
-    padding-left: 15px;
-    padding-right: 15px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-
-    .navbar-header {
-      .logo {
-        margin-top: 0 !important;
-        width: 176px;
-        height: 36px;
-        display: block;
-        background: url("./images/expressvpn.png") no-repeat;
-        background-size: cover;
-        cursor: pointer;
-      }
-    }
-    .navbar-collapse {
-      max-height: 340px;
-      overflow-x: visible;
-      padding-right: 15px;
-      padding-left: 15px;
-      border-top: 1px solid transparent;
-      box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
-      -webkit-overflow-scrolling: touch;
-
-      .navbar-nav {
-        margin-top: 0;
-      }
-      .nav {
-        margin-bottom: 0;
-        padding-left: 0;
-        list-style: none;
-        li {
-          position: relative;
-          display: block;
-          a {
-            padding: 8px 7px !important;
-            color: #333 !important;
-            font-size: 14px;
-            line-height: 24px;
-            position: relative;
-            display: block;
-            .caret {
-              margin-top: -3px;
-              display: inline-block;
-              width: 0;
-              height: 0;
-              margin-left: 2px;
-              vertical-align: middle;
-              border-top: 4px solid;
-              border-right: 4px solid transparent;
-              border-left: 4px solid transparent;
-            }
-
-            &:hover {
-              color: #3B6EB6 !important;
-            }
-          }
-
-          .dropdown-menu {
-            text-transform: none;
-            font-size: 13px;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: auto;
-            z-index: 1000;
-            display: none;
-            float: left;
-            min-width: 160px;
-            padding: 5px 0;
-            margin: 2px 0 0;
-            list-style: none;
-            background-color: #fff;
-            border: 1px solid rgba(0,0,0,0.15);
-            border-radius: 4px;
-            -webkit-box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.175);
-            background-clip: padding-box;
-          }
-
-          .btn-get {
-            background-image: linear-gradient(-180deg, #c8252c 0%, #bd2128 98%);
-            color: #fff !important;
-            font-size: 14px !important;
-            font-weight: 700;
-            line-height: 20px;
-            margin: auto 3px -1px;
-            padding: 8px 10px 7px 10px !important;
-            letter-spacing: 0.1px;
-            background-color: #C8252C;
-            border-color: #C8252C;
-            span.icon-download-expressvpn {
-              display: inline-block;
-              height: 12px;
-              width: 12px;
-              background-image: url("./images/icon-download-expressvpn.png");
-              background-size: 12px 12px;
-              background-position: center center;
-              background-repeat: no-repeat;
-            }
-            &:hover, &:focus, &:active {
-              background-color: #EB4136;
-              border-color: #EB4136;
-              background-image: none;
-              color: #fff !important;
-            }
-          }
-        }
-        .dropdown {
-          position: relative;
-        }
-        .lang-switcher {
-          text-transform: none;
-          font-size: 13px;
-          .glyphicon-circle-arrow-right {
-            &:before {
-              content: "\e135";
-            }
-          }
-        }
-      }
-
-    }
-
-    .collapse {
-      display: none;
-    }
-
-  }
-
-}
 
 .home {
   .top.full-height-jumbotron {
@@ -265,6 +67,9 @@
         color: #58595B;
         margin-bottom: 15px;
       }
+      .img-responsive {
+        display: none;
+      }
       a.btn-get {
         margin-top: 20px;
         font-weight: 600;
@@ -312,11 +117,7 @@
       vertical-align: middle;
     }
 
-    .img-responsive {
-      display: block;
-      max-width: 100%;
-      height: auto;
-    }
+
 
     h3 {
       margin: 24px 0 12px;
@@ -362,38 +163,10 @@
           vertical-align: middle;
         }
 
-        .img-responsive {
-          display: block;
-          height: auto;
-        }
       }
 
       .m-t-40, .m-t-md {
         margin-top: 40px;
-      }
-
-      .btn-get {
-        border-radius: 4px;
-        font-weight: 700;
-        padding-top: 14px;
-        padding-bottom: 14px;
-      }
-
-      .btn {
-        white-space: normal;
-      }
-
-      .btn-lg {
-        padding: 10px 16px;
-        font-size: 20px;
-        line-height: 1.33;
-        border-radius: 6px;
-      }
-
-      .btn-danger {
-        color: #fff;
-        background-color: #C8252C;
-        border-color: #C8252C;
       }
 
       &.last {
@@ -545,6 +318,7 @@
     background-size: cover;
     color: #fff;
     margin: 0;
+    padding: 30px;
 
     h2 {
       margin-top: 24px;
@@ -561,182 +335,97 @@
   }
 }
 
-footer {
-  background: #1E1E1E;
-  padding: 30px 0;
-  display: block;
-
-  .menu {
-    margin-bottom: 1em;
-
-    .footer-col {
-      width: 50%;
-      float: left;
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px;
-    }
-
-  }
-
-  h6 {
-    color: #C8252C;
-    font-size: 19px;
-    font-weight: 400;
-    margin-top: 12px;
-    margin-bottom: 12px;
-  }
-
-  a {
-    color: rgba(255,255,255,0.8);
-    display: block;
-    font-weight: 200;
-    margin: 0.5em 0;
-    line-height: 1.5;
-  }
-
-  .tagline {
-    color: rgba(255,255,255,0.3);
-    font-size: 14px;
-    font-weight: 200;
-    letter-spacing: 0.1px;
-
-    .copyright {
-      border-top: 1px solid rgba(255,255,255,0.1);
-      padding: 10px 0 0;
-      margin-top: 20px;
-    }
-  }
-
-}
 
 @media (max-width: 767px) and (min-width: 321px) {
   .top.full-height-jumbotron .jumbotron {
     background: url("./images/brickwall.png") bottom center repeat;
+    h1 {}
   }
 }
 
+@media (max-width: 767px) {
+  .top.full-height-jumbotron .jumbotron {
+    .container {
+      max-width: 500px!important;
+      margin: auto;
+    }
 
+    h1 {
+      font-size: 28px;
+      line-height: normal;
+    }
+
+    h2 {
+      font-size: 23px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .img-responsive {
+      display: block;
+      max-width: 100%;
+      height: auto;
+    }
+
+    p.money-back-text {
+      font-size: 16px;
+      font-weight: 400;
+      text-align: center;
+      margin-top: -10px;
+    }
+
+    a.btn-get {
+      margin-top: 20px;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      display: block;
+    }
+
+    a.btn {
+      margin: 5px 0;
+    }
+
+  }
+
+  a.btn-get {
+    display: block;
+  }
+
+  a.btn {
+    margin: 5px 0;
+  }
+
+  #reasons-outline .col-sm-4 {
+    max-width: 500px;
+    margin: 0 auto 40px;
+  }
+
+  #reasons-outline img.outline {
+    max-width: 200px;
+    margin: auto;
+  }
+
+  .p-t-0 .feature .col-sm-5 {
+    position: relative;
+    min-height: 1px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .p-t-0 .feature .image img {
+    max-width: 180px!important;
+  }
+
+  h3 {
+    font-size: 22.848px!important;
+  }
+
+}
 
 
 @media (min-width: 768px) {
-  .container {
-    width: 750px;
-  }
-
-  .col-sm-6 {
-    width: 50%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .col-sm-12 {
-    width: 100%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .col-sm-8 {
-    width: 66.66667%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .col-sm-5 {
-    width: 41.66667%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  .col-sm-10 {
-    width: 83.33333%;
-    float: left;
-  }
-
-  .col-sm-4 {
-    width: 33.33333%;
-    float: left;
-  }
-
-  .col-sm-7 {
-    width: 58.33333%;
-    float: left;
-    position: relative;
-    min-height: 1px;
-  }
-
-  .col-sm-offset-2 {
-    margin-left: 16.66667%;
-  }
-
-  .col-sm-offset-1 {
-    margin-left: 8.33333%;
-  }
-
-  .header {
-
-      .navbar {
-        padding: 18px 0 14px;
-        -moz-border-radius: 0px;
-        -webkit-border-radius: 0px;
-        border-radius: 0px;
-      }
-
-      .navbar-header {
-        margin-right: 0;
-        margin-left: 0;
-        float: left;
-      }
-      .navbar-collapse.collapse {
-        margin-right: 0;
-        margin-left: 0;
-        display: block !important;
-        height: auto !important;
-        padding-bottom: 0;
-        overflow: visible !important;
-        width: auto;
-        border-top: 0;
-        box-shadow: none;
-
-        .navbar-nav.navbar-right:last-child {
-          margin-right: -15px;
-        }
-        .navbar-right {
-          float: right !important;
-          .dropdown-menu-left {
-            left: 0;
-            right: auto;
-          }
-        }
-        .navbar-nav {
-          float: left;
-          margin: 0;
-          li {
-            float: left;
-            a {
-              padding-top: 13px;
-              padding-bottom: 13px;
-            }
-          }
-          .lang-switcher {
-            margin-left: 0;
-          }
-        }
-      }
-    }
 
   .top {
      .jumbotron {
@@ -775,10 +464,44 @@ footer {
 
 }
 
-@media (min-width: 992px) {
-  .container {
-    width: 970px;
+
+@media (max-width: 991px) and (min-width: 768px) {
+  .top.full-height-jumbotron .jumbotron {
+    max-height: 450px;
+    background-position: center bottom;
+    background-size: 800px, auto;
   }
+}
+
+
+@media (max-width: 991px) {
+  .home .top .jumbotron {
+    height: auto;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  h3 {
+    font-size: 22.848px!important;
+  }
+
+  h2 {
+    font-size: 25.704px!important;
+  }
+
+  .p-t-0 .feature .image {
+    margin-left: auto;
+    margin-right: auto;
+
+    img {
+      margin: 20px auto;
+      max-width: 260px;
+    }
+  }
+}
+
+
+@media (min-width: 992px) {
 
   .home {
     .top.full-height-jumbotron {
@@ -796,20 +519,77 @@ footer {
 
 }
 
-@media (min-width: 1200px) {
-  .container {
-    width: 1030px;
+@media (max-width: 1199px) and (min-width: 1093px) {
+  .home .top.full-height-jumbotron .jumbotron {
+    max-height: 550px;
+    background-position: center bottom;
+    background-size: 930px, auto;
   }
+}
+
+
+@media (min-width: 1200px) {
 
   .home {
     .top.full-height-jumbotron .jumbotron {
        max-height: 500px;
        min-height: 400px;
-       background-size: 110%, auto;
+       //background-size: 110%, auto;
+      background-position: center bottom;
+      background-size: 900px, auto;
      }
   }
 
 }
+
+@media (max-width: 1200px) {
+  .home .top.full-height-jumbotron .jumbotron {
+    max-height: 500px;
+    min-height: 400px;
+    //background-position: center bottom;
+    //background-size: 900px, auto;
+  }
+}
+
+
+@media (max-width: 1199px) and (min-width: 1093px) {
+  .home .top.full-height-jumbotron .jumbotron {
+    max-height: 550px;
+    background-position: center bottom;
+    background-size: 930px, auto;
+  }
+}
+
+
+@media (max-width: 1290px) and (min-width: 1201px) {
+  .home .top.full-height-jumbotron .jumbotron {
+    max-height: 650px;
+    min-height: 550px;
+    background-position: center bottom;
+    background-size: 1300px, auto;
+  }
+}
+
+
+@media (max-width: 1439px) and (min-width: 1291px) {
+  .home .top.full-height-jumbotron .jumbotron {
+    max-height: 650px;
+    min-height: 550px;
+    background-position: center bottom !important;
+    background-size: 1250px, auto;
+  }
+}
+
+
+@media (max-width: 1600px) and (min-width: 1440px) {
+  .home .top.full-height-jumbotron .jumbotron {
+    max-height: 650px;
+    min-height: 550px;
+    background-position: center bottom;
+    background-size: 1400px, auto;
+  }
+}
+
 
 @media (max-width: 1999px) and (min-width: 1601px) {
   .home {

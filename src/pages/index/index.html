@@ -2,142 +2,15 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>VPN Web</title>
+  <title>BladeVPN</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="./images/favicon.png" rel="icon" type="images/png">
+  <link href="../../static/images/logo_blue_30.png" rel="icon" type="images/png">
 </head>
 <body>
   <div class="wrapper">
     <!--header start-->
-    <header>
-      <div class="header">
-        <nav class="navbar">
-          <div class="container">
-            <div class="navbar-header">
-              <a href="/" class="logo"></a>
-            </div>
-            <div class="collapse navbar-collapse">
-              <div class="nav navbar-nav navbar-right">
-
-                <li class="dropdown">
-                  <a href="javacript:;" class="dropdown-toggle">
-                    Take a tour
-                    <b class="caret"></b>
-                  </a>
-                  <ul aria-labelledby="tour-dropdown" class="dropdown-menu dropdown-menu-left left-pointer">
-                    <li>
-                      <a href="/what-is-vpn">What is VPN?</a>
-                    </li>
-                    <li class="divider" role="separator"></li>
-                    <li>
-                      <a href="/what-is-vpn/browse-anonymously">Browse Anonymously</a>
-                    </li>
-                    <li>
-                      <a href="/what-is-vpn/hide-ip-address">Hide Your IP</a>
-                    </li>
-                    <li>
-                      <a href="/what-is-vpn/unblock-websites">Unblock Websites</a>
-                    </li>
-                    <li>
-                      <a href="/what-is-vpn/vpn-speed-test">VPN Speed Test</a>
-                    </li>
-                    <li>
-                      <a href="/what-is-vpn/logless-vpn">No Log VPN</a>
-                    </li>
-                    <li>
-                      <a href="/what-is-vpn/vpn-encryption">VPN Encryption</a>
-                    </li>
-                    <li>
-                      <a href="/what-is-vpn/protocols">All VPN Protocols</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li class="dropdown">
-                  <a class="dropdown-toggle" id="apps-dropdown" href="/vpn-software">VPN Apps
-                    <b class="caret"></b>
-                  </a>
-                  <ul aria-labelledby="apps-dropdown" class="dropdown-menu dropdown-menu-left left-pointer">
-                    <li>
-                      <a href="/vpn-software">All VPN Software</a>
-                    </li>
-                    <li class="divider" role="separator"></li>
-                    <li>
-                      <a href="/vpn-software/vpn-windows">Windows</a>
-                    </li>
-                    <li>
-                      <a href="/vpn-software/vpn-mac">Mac</a>
-                    </li>
-                    <li>
-                      <a href="/vpn-software/vpn-android">Android</a>
-                    </li>
-                    <li>
-                      <a href="/vpn-software/vpn-ios">iOS</a>
-                    </li>
-                    <li>
-                      <a href="/vpn-software/vpn-iphone">iPhone</a>
-                    </li>
-                    <li>
-                      <a href="/vpn-software/vpn-ipad">iPad</a>
-                    </li>
-                    <li>
-                      <a href="/vpn-software/vpn-linux">Linux</a>
-                    </li>
-                    <li class="divider" role="separator"></li>
-                    <li>
-                      <a href="/vpn-software/vpn-router">Router</a>
-                    </li>
-                  </ul>
-                </li>
-
-                <li>
-                  <a href="/support/">Support</a>
-                </li>
-                <li>
-                  <a href="/blog/">Blog</a>
-                </li>
-                <li>
-                  <a class="login" href="/users/sign_in">My Account</a>
-                </li>
-                <li>
-                  <a class="btn-get btn btn-danger" id="header_get_expressvpn" href="/order"><span class="icon-download-expressvpn"></span>
-                    Get ExpressVPN Now
-                  </a></li>
-                <li class="dropdown lang-switcher">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="javascript: void(0);">
-                    <span class="glyphicon glyphicon-globe"></span>
-                    English
-                    <b class="caret"></b>
-                  </a>
-                  <ul class="dropdown-menu" role="menu">
-                    <li>
-                      <a href="/fr">Français</a>
-                      <a href="/de">Deutsch</a>
-                      <a href="/es">Español</a>
-                      <a href="/ru">Русский</a>
-                      <a href="/pt">Português</a>
-                      <a href="/no">Norsk</a>
-                      <a href="/it">Italiano</a>
-                      <a href="/jp">日本語</a>
-                      <a href="/kr">한국어</a>
-                      <a href="/th">ภาษาไทย</a>
-                      <a href="/tr">Türkçe</a>
-                      <a href="/nl">Nederlands</a>
-                      <a href="/se">Svenska</a>
-                      <a href="/fi">Suomi</a>
-                      <a href="/dk">Dansk</a>
-                      <a href="/pl">Polski</a>
-                    </li>
-                  </ul>
-                </li>
-
-              </div>
-            </div>
-          </div>
-        </nav>
-      </div>
-    </header>
+    #include("../../components/header/header.html")
     <!--header end-->
 
     <!--home start-->
@@ -156,8 +29,9 @@
                 <p>
                   High speed, ultra secure, and easy to use. Instant setup.
                 </p>
+                <img alt="devices" class="img-responsive" src="./images/vpn-devices.png">
                 <p>
-                  <a class="btn btn-danger btn-lg btn-get" href="/order"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                  <a class="btn btn-blue btn-lg btn-get" href="/order"><span class="glyphicon icon-arrow-circle-right"></span>
                     Get ExpressVPN
                   </a></p>
                 <p class="money-back-text">30 Day Money Back Guarantee</p>
@@ -283,7 +157,7 @@
             </div>
             <div class="row">
               <div class="col-sm-12 text-center">
-                <a class="btn btn-danger btn-lg btn-get m-t-40" href="/order"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                <a class="btn btn-blue btn-lg btn-get m-t-40" href="/order"><span class="glyphicon icon-arrow-circle-right"></span>
                   Get ExpressVPN
                 </a></div>
             </div>
@@ -313,7 +187,7 @@
                     for all your devices (Windows, Mac, iOS, Android, Routers, Linux)
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -321,7 +195,7 @@
                     bandwidth
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -329,7 +203,7 @@
                     server switches
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -337,7 +211,7 @@
                     speed
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -345,7 +219,7 @@
                     uptime
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -355,7 +229,7 @@
                     protocols
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -363,7 +237,7 @@
                     encryption
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -371,7 +245,7 @@
                     of your network traffic
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -380,7 +254,7 @@
                     <strong>94 countries</strong>
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -388,13 +262,13 @@
                     up to 3 devices
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
                   <td>Round-the-clock customer support by chat or email</td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -402,7 +276,7 @@
                     &amp; refer friends and get 30 days of free service for each signup!
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 <tr>
@@ -410,7 +284,7 @@
                     money-back guarantee
                   </td>
                   <td class="text-center">
-                    <span class="glyphicon glyphicon-ok"></span>
+                    <span class="glyphicon icon-OK"></span>
                   </td>
                 </tr>
                 </tbody>
@@ -419,7 +293,7 @@
           </div>
           <div class="row">
             <div class="col-sm-12 text-center">
-              <a class="btn btn-danger btn-lg btn-get" href="/order"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+              <a class="btn btn-blue btn-lg btn-get" href="/order"><span class="glyphicon icon-arrow-circle-right"></span>
                 Get ExpressVPN
               </a></div>
           </div>
@@ -464,7 +338,7 @@
 
                 </p>
                 <p class="m-t">
-                  <a class="btn btn-danger btn-lg btn-get" href="/order"><span class="glyphicon glyphicon-circle-arrow-right"></span>
+                  <a class="btn btn-blue btn-lg btn-get" href="/order"><span class="glyphicon icon-arrow-circle-right"></span>
                     Get ExpressVPN
                   </a></p>
               </div>
@@ -475,64 +349,8 @@
     </div>
     <!--home end-->
   </div>
-
   <!--footer start-->
-  <footer>
-    <div class="container">
-      <div class="menu row">
-        <div class="col-sm-6">
-          <div class="row">
-            <div class="footer-col">
-              <h6>Learn More</h6>
-              <a href="/vpn-software">VPN Software</a>
-              <a href="/vpn-service">VPN Service</a>
-              <a href="/vpn-server">VPN Server</a>
-              <a href="/what-is-vpn">What is VPN?</a>
-              <a href="/what-is-my-ip">What is My IP?</a>
-              <a href="/internet-privacy/">Internet Privacy</a>
-              <a href="/stream-sports/">Stream Sports</a>
-              <a href="/get-started">Top 5 VPN Uses</a>
-            </div>
-            <div class="footer-col">
-              <h6>Service</h6>
-              <a href="/support/vpn-setup">VPN Setup</a>
-              <a href="/users/sign_in">Login</a>
-              <a href="/support/troubleshooting/frequently-asked-questions/">FAQ</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-6">
-          <div class="row">
-            <div class="footer-col">
-              <h6>About</h6>
-              <a href="/support/">Contact Us</a>
-              <a href="/order">Plans and Pricing</a>
-              <a href="/press">Press</a>
-              <a target="_blank" href="/tos">Terms of Service</a>
-              <a href="/features/money-back-guarantee">Money-Back Guarantee</a>
-              <a href="/affiliates">Affiliates</a>
-              <a href="/features">Features</a>
-            </div>
-            <div class="footer-col">
-              <h6>Social</h6>
-              <a href="/refer-a-friend">Referrals</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="tagline">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="copyright">
-              © 2017 ExpressVPN. All rights reserved.
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
+  #include("../../components/footer/footer.html")
   <!--footer end-->
 </body>
 </html>

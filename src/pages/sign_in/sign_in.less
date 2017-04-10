@@ -1,0 +1,160 @@
+@import "../../components/common/common.less";
+@import "../../static/iconFont/fonticon.css";
+
+label, select, button, input[type="button"], input[type="reset"], input[type="submit"], input[type="radio"], input[type="checkbox"] {
+  cursor: pointer;
+}
+
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+  -webkit-appearance: button;
+  cursor: pointer;
+}
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+  -webkit-transition: border linear 0.2s,box-shadow linear 0.2s;
+  -moz-transition: border linear 0.2s,box-shadow linear 0.2s;
+  -o-transition: border linear 0.2s,box-shadow linear 0.2s;
+  transition: border linear 0.2s,box-shadow linear 0.2s;
+}
+
+select, textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+  display: inline-block;
+  height: 20px;
+  padding: 4px 6px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #555;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+body, p, td, input, textarea, select {
+  font-family: "proxima-nova", "proxima nova", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.login {
+  .session-form {
+    font-size: 15px;
+    font-weight: 200;
+    background-color: rgba(4,155,219,0.02);
+    max-width: 497px;
+    width: 100%;
+    padding: 30px 20px;
+    margin: auto;
+
+    .new_user {
+      margin: 0 0 20px;
+
+      .page-title {
+        color: #43474C;
+        font-size: 32px;
+        margin-top: 0;
+        margin-bottom: 50px;
+        font-weight: 200;
+        text-align: left;
+        padding-top: 10px;
+      }
+
+      .form-group {
+        margin-bottom: 15px;
+
+        label {
+          font-size: 15px;
+          display: block;
+          margin-bottom: 5px;
+          font-weight: normal;
+          line-height: 20px;
+        }
+      }
+    }
+
+    .form-field {
+      -webkit-appearance: none;
+      background-color: #fff;
+      border: 1px solid #999999;
+      border-radius: 4px;
+      box-shadow: none;
+      width: 100%;
+      min-height: 48px;
+      line-height: 1;
+      padding-left: 18px;
+      padding-right: 18px;
+      margin-bottom: 8px;
+    }
+
+    .form-submit {
+      width: 100%;
+      margin-top: 25px;
+      margin-bottom: 28px;
+      -webkit-appearance: none;
+      background-color: #C8252C;
+      border: 0;
+      border-radius: 2px;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      padding: 18px 20px 17px;
+      display: block;
+      line-height: 1;
+    }
+  }
+
+  input[type=text], input[type=password], input[type=email] {
+    width: 100%;
+  }
+
+  .form-helper {
+    text-align: center;
+    margin-top: 10px;
+    .link {
+      display: inline-block;
+      vertical-align: middle;
+
+      a {
+        color: #049BDB;
+      }
+    }
+
+    a {
+      color: #049BDB;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .login {
+    .session-form {
+      min-height: 557px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px 0 rgba(0,0,0,0.08), 0 5px 50px 0 rgba(0,0,0,0.08);
+      margin: 68px auto;
+      padding: 52px 47px 63px;
+
+      .page-title {
+        font-size: 40px;
+      }
+    }
+
+    .form-helper .link a {
+      margin: 0 20px;
+    }
+  }
+
+}
+
+@media (min-width: 1200px) {
+  input, textarea, .uneditable-input {
+    margin-left: 0;
+  }
+}
+
